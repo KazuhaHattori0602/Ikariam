@@ -16,6 +16,7 @@ public class Catapult extends Artillery {
         accuracy = 0.1f;
         nearHit = 4;
         accuracyNear = 0.2f;
+        intMunition = 5;
     }
 
     public String getImageUrl() {

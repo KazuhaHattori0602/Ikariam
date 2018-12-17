@@ -213,12 +213,12 @@ public class BattleFieldUI extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
             	// them numberSent
-            	int[] numberSentArmy = new int[12];  
-            	  for (int i=0;i<12;i++) {
-
-                     numberSentArmy[i] = Integer.valueOf(pnSetUnitBattle[i].getSld().getValue());
+//            	int[] numberSentArmy = new int[12];  
+//            	  for (int i=0;i<12;i++) {
+//
+//                     numberSentArmy[i] = Integer.valueOf(pnSetUnitBattle[i].getSld().getValue());
              
-                  }
+//                  }
 //                numberArmy(numberSentArmy);
                 saveArmyAndSentedArmy();
                 battleField.resetAll(battleField.getLevelOfHouse());
@@ -364,8 +364,8 @@ public class BattleFieldUI extends JDialog {
                 for (int i = 0; i < pnSetUnitBattle[unit.ordinal()].getSld().getValue(); i++) {
                     battleField.reserve.getSpear().push(new Spearman());
                 }
-                battleField.setFrontLine();
-                battleField.setFlankToSlot();
+                int x = battleField.setFrontLine();
+                battleField.setFlankToSlot(x);
                 pnBattlefield.updates(pnBattlefield.pnFlank, 0);
                 break;
             case SteamGiant:
@@ -381,6 +381,7 @@ public class BattleFieldUI extends JDialog {
             case Sulfur:
                 battleField.reserve.getSC().clear();
                 battleField.resetUnitSlot(battleField, battleField.longRangeFighter, Army.Unit.Sulfur);
+ //               pnBattlefield.updates(pnBattlefield.pnLongRangeFighter, 0);
                 for (int i = 0; i < pnSetUnitBattle[unit.ordinal()].getSld().getValue(); i++) {
                     battleField.reserve.getSC().push(new SulphurCarabineer());
                 }
@@ -393,8 +394,8 @@ public class BattleFieldUI extends JDialog {
                 for (int i = 0; i < pnSetUnitBattle[unit.ordinal()].getSld().getValue(); i++) {
                     battleField.reserve.getSword().push(new Swordsman());
                 }
-                battleField.setFrontLine();
-                battleField.setFlankToSlot();
+                int y =battleField.setFrontLine();
+                battleField.setFlankToSlot(y);
                 pnBattlefield.updates(pnBattlefield.pnFlank, 0);
                 break;
             default:

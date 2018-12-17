@@ -16,6 +16,7 @@ public class Mortar extends Artillery {
         accuracy = 0.1f;
         accuracyNear = 0.2f;
         nearHit = 10;
+        intMunition = 3;
     }
 
     public String getImageUrl() {

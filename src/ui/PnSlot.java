@@ -81,6 +81,7 @@ public class PnSlot extends JPanel {
             lblUnit.setIcon(new javax.swing.ImageIcon(getClass().getResource(slot.getImageUrl())));
             txtNumberOfUnit.setText(slot.getUnitAlive() + "/" + slot.getInitNumUnit());
             if (previewOrReal == 1) {
+  
             	if(slot.getUnitType().ordinal() == Army.Unit.Ram.ordinal())
             	{
             		 prgHitPoint.setValue(slot.getTotalHitpoint());
@@ -88,8 +89,6 @@ public class PnSlot extends JPanel {
             	}
             	else {
                 prgHitPoint.setValue(slot.getTotalHitpoint());
-//                System.out.println("total"+slot.getTotalHitpoint());
-//                System.out.println("pro"+slot.getInitHitpointUnit());
                 prgMunition.setValue(slot.getTotalMunition());
             	}
             }

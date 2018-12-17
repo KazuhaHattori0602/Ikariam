@@ -13,6 +13,7 @@ public class Gyrocopter extends AirDefence {
         armour = 0;
         damage = 17;
         accuracy = 0.8f;
+        intMunition = 4;
     }
 
     public String getImageUrl() {

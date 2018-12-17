@@ -13,6 +13,8 @@ public class BalloonBombardier extends AirDefence {
         damage = 48;
         armour = 0;
         accuracy = 0.2f;
+        intMunition = 2;
+
     }
 
     public String getImageUrl() {

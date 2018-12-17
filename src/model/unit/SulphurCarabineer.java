@@ -16,6 +16,7 @@ public class SulphurCarabineer extends LongRangeFighter {
         accuracy = 0.7f;
         accuracyNear = 0.6f;
         nearHit = 3;
+        intMunition = 3;
     }
     public String getImageUrl() {
         return imageUrl;

@@ -14,6 +14,7 @@ public class Slinger extends LongRangeFighter {
         accuracy = 0.2f;
         nearHit = 2;
         accuracyNear = 0.6f;
+        intMunition = 5;
     }
 
     public String getImageUrl() {

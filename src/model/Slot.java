@@ -111,19 +111,20 @@ public class Slot {
         }
     }
 	public int getTotalMunition() {
-		int totalPercent,totalMunition = 0;
+		int totalMunition = 0;
 		for(UnitFighter unitFighter : unit) {
+                    if (unitFighter.getMunition() > 0) {
 			totalMunition += unitFighter.getMunition();
+                    }
 		}
 		if(getUnitAlive() == 0 || initMunition == 0)
 			return 0;
-//		else if(unitFighter.getMunition() <=0 )
-//			return 0;
 		else {
-//			System.out.println("init"+initMunition);
-			return totalMunition*100/(getUnitAlive()*initMunition);
+			return totalMunition * 100/(getUnitAlive() * initMunition);
 		}
 	}
+        
+        
     public int getTotalHitpointNotPercent() {
         int totalHitpoint = 0;
         for (UnitFighter unitFighter : unit) {                

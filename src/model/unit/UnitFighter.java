@@ -8,10 +8,9 @@ public class UnitFighter {
     protected int munition;
     protected float accuracy;
     protected int nearHit;
-    protected float accuracyNear;
-     
+    protected float accuracyNear; 
+    protected int intMunition;
 
-   
 
 
 
@@ -73,6 +72,12 @@ public class UnitFighter {
 		this.accuracyNear = accuracyNear;
 	}
 
-	
+    public int getIntMunition() {
+        return intMunition;
+    }
+
+    public void setIntMunition(int intMunition) {
+        this.intMunition = intMunition;
+    }
     
 }

@@ -1,7 +1,7 @@
 package model.unit;
 
 public class Archer extends UnitMunition {
-	public static final int speed = 60;
+    public static final int speed = 60;
     public static final int size = 1;
    
     public static final float accuracyNearHit = 0.6f;
@@ -16,6 +16,7 @@ public class Archer extends UnitMunition {
         accuracy = 0.4f;
         accuracyNear = 0.6f;
         nearHit = 5;
+        intMunition = 3;
     }
 
     public String getImageUrl() {
